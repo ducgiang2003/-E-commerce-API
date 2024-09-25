@@ -1,0 +1,8 @@
+@host = localhost:8080
+
+// Generate JWT
+GET  http://{{host}}/api/secured/ping HTTP/1.1
+content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im11a2VzaC5tdXJ1Z2FuIiwiZW1haWwiOiJtdWtlc2hAZ28uY29tIiwiZXhwIjoxNzI3MTY1MzA5fQ.XG61ZdZxSkAg3VXy7GBi1-52tic10sXR4e-98d9YlDs
+
+###
