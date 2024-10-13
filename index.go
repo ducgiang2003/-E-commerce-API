@@ -19,7 +19,7 @@ func main() {
 }
 func initRouter() *gin.Engine {
 	router := gin.Default()
-	api := router.Group("/api", controllers.RegisterUser)
+	api := router.Group("/api")
 	{
 		api.POST("/token", controllers.GenerateToken)
 		api.POST("/user/register", controllers.RegisterUser)
